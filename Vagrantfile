@@ -9,11 +9,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      box1.vm.network   :forwarded_port, guest: 80, host: 80, auto_correct: false
      box1.vm.network   :forwarded_port, guest: 443, host: 443, auto_correct: false
      box1.vm.provision "shell",
-       inline: "sudo yum install nginx -y"
+       inline: "sudo yum install git -y"
      box1.vm.provision "shell",
-       inline: "sudo systemctl enable nginx"
-	 box1.vm.provision "shell",
-	   inline: "sudo systemctl start nginx"
+       inline: "git clone https://github.com/Zuko620514/ots.git"
+	   
  end
 
 end
