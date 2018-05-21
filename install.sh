@@ -21,3 +21,15 @@ patch ./ext/openssl/ossl_pkey_ec.c < out.patch
 make install
 yum install rubygems-devel -y
 gem install bundler
+cd ~/sources
+curl -O http://download.redis.io/releases/redis-3.2.9.tar.gz
+tar zxf redis-3.2.9.tar.gz
+cd redis-3.2.9
+make
+make install
+adduser ots
+mkdir /etc/onetime
+chown ots /etc/onetime
+sudo su - ots
+git clone https://github.com/Zuko620514/onetimesecret
+cd onetimesecret
