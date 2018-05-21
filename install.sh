@@ -1,5 +1,6 @@
 #!/bin/bash
 
+yum clean all
 yum install epel-release -y 
 yum update -y
 yum install nginx -y
