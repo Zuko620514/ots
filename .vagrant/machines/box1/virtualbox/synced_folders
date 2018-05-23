@@ -1,1 +1,0 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"C:/git/ots","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

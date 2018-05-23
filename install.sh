@@ -30,6 +30,3 @@ make install
 adduser ots
 mkdir /etc/onetime
 chown ots /etc/onetime
-sudo su - ots
-git clone https://github.com/Zuko620514/onetimesecret
-cd onetimesecret
