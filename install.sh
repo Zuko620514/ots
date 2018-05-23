@@ -1,6 +1,7 @@
 #!/bin/bash
 
 yum clean all
+yum install vim -y
 yum install epel-release -y 
 yum update -y
 yum install nginx -y
@@ -22,6 +23,7 @@ make install
 yum install rubygems-devel -y
 gem install bundler
 cd ~/sources
+#redis install
 curl -O http://download.redis.io/releases/redis-3.2.9.tar.gz
 tar zxf redis-3.2.9.tar.gz
 cd redis-3.2.9

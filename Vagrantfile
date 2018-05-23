@@ -7,6 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
  config.vm.define "box1" do |box1|
      box1.vm.network "private_network", ip: "172.20.20.10"
      box1.vm.network   :forwarded_port, guest: 80, host: 80, auto_correct: false
+	 box1.vm.network   :forwarded_port, guest: 7143, host: 7143, auto_correct: false
      box1.vm.network   :forwarded_port, guest: 443, host: 443, auto_correct: false
      box1.vm.provision "shell",
        inline: "sudo yum install git -y"
